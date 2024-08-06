@@ -5,9 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe Page</title>
     <link rel="stylesheet" href="index.css">
+     <!-- favicon -->
+     <link rel="apple-touch-icon" sizes="180x180" href="./img/assets/icons/">
+     <link rel="icon" type="image/png" sizes="32x32" href="./img/assets/icons//favicon-32x32.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="./img/assets/icons//favicon-16x16.png">
+     <link rel="manifest" href="./img/assets/icons//site.webmanifest">
+     <!-- google font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="container header">
+        <header class="flow">
+            <img src="./img/desktop-cover.jpg" alt="cover-img" class="cover-img flow">
+            <h1 class="fs-800 ff-serif">Simple Omelette Recipe</h1>
+        </header>
+        <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with you choice of cheese, vegetables, or meats.</p>
+    </div>
+
+    <div class="container intro">
+        <div class="bg-rose-light prep flow">
+            <h3 class="text-rose fs-500 text-bold">Preparation time</h3>
+            <ul>
+                <li><span class="text-bold">Total</span> :Approximately 10 minutes</li>
+                <li><span class="text-bold">Preparation</span>: 5 minutes</li>
+                <li><span class="text-bold">Cooking</span>: 5 minutes</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container ingredients flow">
+        <h3 class="text-brown fs-600 ff-serif text-bold">Ingredients</h3>
+        <ul>
+            <li>2-3 large eggs</li>
+            <li>Salt, to taste</li>
+            <li>Pepper, to taste</li>
+            <li>1 tablespoon of butter or oil</li>
+            <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+        </ul>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="instruction container flow">
+        <h3 class="text-brown fs-600 ff-serif text-bold">
+            Instructions
+        </h3>
+        <ol>
+            <li><span class="text-bold">Beat the eggs: </span>&nbsp;In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. you can add a tablespoon of water or milk for a fluffer texture.</li>
+            <li><span class="text-bold">Heat the pan:</span> &nbsp;Place a non-stick frying pan over medium heat and add butter or oil.</li>
+            <li><span class="text-bold">Cook the omelette: </span> &nbsp;Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface.</li>
+            <li><span class="text-bold">Add fillings(optional):</span> &nbsp;When the eggs begin to set at the edges but are still slightly runny in the middle, sprinkle your chosen fillings over one half of the omelette.</li>
+            <li><span class="text-bold">Fold and serve: </span> &nbsp;As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.</li>
+            <li><span class="text-bold">Enjoy: </span> &nbsp;Serve hot, with additional salt and pepper if needed.</li>
+        </ol>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="container nutrition flow">
+        <h3 class="text-brown fs-600 ff-serif text-bold">
+            Nutrition
+        </h3>
+        <p class="flow">The table below shows nutritional values per serving without the additional fillings.</p>
+
+        <table class="table">
+            <tr>
+                <td class="desc">Calories</td>
+                <td class="amount">277kcal</td>
+            </tr>
+            <tr>
+                <td class="desc">Carbs</td>
+                <td class="amount">0g</td>
+            </tr>
+            <tr>
+                <td class="desc">Protein</td>
+                <td class="amount">20g</td>
+            </tr>
+            <tr>
+                <td class="desc">Fat</td>
+                <td class="amount">22g</td>
+            </tr>
+        </table>
+    </div>
     
+
 
 
     <script src="index.js"></script>
