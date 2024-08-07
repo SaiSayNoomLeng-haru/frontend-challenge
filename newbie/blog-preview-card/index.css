@@ -78,7 +78,7 @@ body{
     user-select: none;
     scroll-behavior: smooth;
     line-height: 1.5;
-    background-color: hsl(var(--clr-gray-900));
+    background-color: hsl(var(--clr-yellow));
     color: hsl(var(--clr-white));
 
     display: grid;
