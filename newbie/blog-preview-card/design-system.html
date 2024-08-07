@@ -10,9 +10,105 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/icon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/icon/favicon-16x16.png">
     <link rel="manifest" href="./assets/icon//site.webmanifest">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     
 </head>
 <body>
+   <div class="container">
+    <h1>Design System</h1>
+
+    <section id="colors" class="flow">
+        <h3 class="number-title">01 <span>colors</span></h3>
+
+        <div class="flex flow">
+            <div style="flex-grow: 1;">
+                <div class="bg-white text-dark" style="padding: 2em; border: 1px solid white;">
+                    #FFFFFF
+                </div>
+                <p>RGB <span class="text-yellow">255 255 255</span></p>
+                <p>HSL <span class="text-yellow">0° 0 100</span></p>
+            </div>
+
+            <div style="flex-grow: 1;">
+                <div class="bg-dark text-white" style="padding: 2em; border: 1px solid white;">
+                    #121212
+                </div>
+                <p>RGB <span class="text-yellow">18 18 18</span></p>
+                <p>HSL <span class="text-yellow">0° 0 7</span></p>
+            </div>
+
+            <div style="flex-grow: 1;">
+                <div class="bg-light text-dark" style="padding: 2em; border: 1px solid white;">
+                    #6B6B6B
+                </div>
+                <p>RGB <span class="text-yellow">107 107 107</span></p>
+                <p>HSL <span class="text-yellow">0° 0 42</span></p>
+            </div>
+
+            <div style="flex-grow: 1;">
+                <div class="bg-yellow text-dark" style="padding: 2em; border: 1px solid white;">
+                    #A18213
+                </div>
+                <p>RGB <span class="text-yellow">161 130 19</span></p>
+                <p>HSL <span class="text-yellow">47° 88 63</span></p>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section id="typography">
+        <h3 class="number-title">02 <span>typography</span></h3>
+
+        <div class="flex flow">
+            <div style="flex-basis: 100%;">
+                <div>
+                    <p class="text-yellow">Heading 1, Figtree, 32px</p>
+                    <p class="ff-normal uppercase bold-1 fs-800">HTML & CSS Foundations</p>
+                </div>
+
+                <div>
+                    <p class="text-yellow">Heading 2, Figtree, 24px</p>
+                    <p class="ff-normal uppercase bold-2 fs-600">Username Username</p>
+                </div>
+            </div>
+
+            <div style="flex-basis: 100%;">
+                <div>
+                    <p class="text-yellow">Sub-heading 1, Figtree, 18px</p>
+                    <p class="ff-normal fs-500">Published</p>
+                </div>
+
+                <div>
+                    <p class="text-yellow">Body</p>
+                    <p class="ff-normal text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem reiciendis sapiente voluptates fugiat labore ex nostrum accusantium deleniti ut culpa, aspernatur quos obcaecati dicta reprehenderit eveniet debitis doloremque odio dolorum.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="interactive">
+        <h3 class="number-title">03 <span>Elements</span></h3>
+
+        <div class="flex flow" style="--gap: 3em">
+            <h2 class="ff-normal fs-800 bold-1 caption-text">HTML & CSS foundation</h2>
+
+           <div>
+            <button class="link-desc-btn">Learning</button>
+           </div>
+            
+            <div>
+                
+            <img src="./assets/img/IMG_6418 (1).JPG" alt="profile" class="profile-img">
+            </div>
+        </div>
+
+    </section>
+   </div>
     
 
 
