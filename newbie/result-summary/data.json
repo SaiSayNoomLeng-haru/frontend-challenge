@@ -1,0 +1,34 @@
+[
+    {
+        "id" : 1,
+        "name" : "sai",
+        "reaction" : 80,
+        "memory" : 90,
+        "verbal" : 90,
+        "visual" : 80
+    },
+    {
+        "id" : 2,
+        "name" : "say",
+        "reaction" : 70,
+        "memory" : 80,
+        "verbal" : 80,
+        "visual" : 70
+    },
+    {
+        "id" : 3,
+        "name" : "noom",
+        "reaction" : 85,
+        "memory" : 75,
+        "verbal" : 85,
+        "visual" : 88
+    },
+    {
+        "id" : 4,
+        "name"  : "leng",
+        "reaction" : 78,
+        "memory" : 86,
+        "verbal" : 78,
+        "visual" : 89
+    }
+]
