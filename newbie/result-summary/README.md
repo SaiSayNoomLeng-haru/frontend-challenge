@@ -11,3 +11,14 @@
 ### Screenshots
 
 ![design-system](./assets/screenshots/design-system.png)
+![desktop](./assets/screenshots/desktop.png)
+![mobile](./assets/screenshots/mobile.png)
+
+### Built With
+- HTML
+- CSS custom properties
+- Flexbox
+- Grid
+
+### Notes
+- to revise with json

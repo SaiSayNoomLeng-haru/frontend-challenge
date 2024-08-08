@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Result-Summary</title>
+        <link rel="stylesheet" href="index.css">
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/">
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <!-- google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <div class="container grid main">
+        <!-- left side -->
+        <div class="score-container grid text-lavender">
+            <div>
+                <p class="text-lavender fs-600 ff-hanken bold-2">Your Result</p>
+            </div>
+            
+            <div class="radial-container flex" style="--gap: 0;">
+                <div>
+                    <p class="text-white fs-900 ff-hanken bold-1">76</p>
+                </div>
+                <div>
+                    <p class="text-lavender bold-2">of 100</p>
+                </div>
+            </div>
+
+            <div class="score-text">
+                <p class="text-white fs-800 ff-hanken bold-1">Great</p>
+            </div>
+
+            <div class="desc">
+                <p class="text-lavender fs-400 ff-hanken text-center">You scored higher than 65% of the people who have taken the tests.</p>
+            </div>
+         </div>
+         <!-- end left side -->
+
+        <!-- right side -->
+         <div class="grid summary">
+            <p class="text-dark fs-600 ff-hanken bold-2">Summary</p>
+            
+            <div class="reaction flex">
+                <div class="flex" style="--gap: 0.5em;">
+                    <img src="./assets/img/icon-reaction.svg" alt="reaction">
+                    <p class="fs-500 ff-hanken bold-2">Reaction</p>
+                </div>
+
+                <div>
+                    <p class="text-lavender fs-500 ff-hanken bold-2"><span class="text-dark">80</span> /100</p>
+                </div>
+            </div>
+
+            <div class="memory flex">
+                <div class="flex" style="--gap: 0.5em;">
+                    <img src="./assets/img/icon-memory.svg" alt="memory">
+                    <p class="fs-500 ff-hanken bold-2">Memory</p>
+                </div>
+
+                <div>
+                    <p class="text-lavender fs-500 ff-hanken bold-2"><span class="text-dark">80</span> /100</p>
+                </div>
+            </div>
+
+            <div class="verbal flex">
+                <div class="flex" style="--gap: 0.5em;">
+                    <img src="./assets/img/icon-verbal.svg" alt="verbal">
+                    <p class="fs-500 ff-hanken bold-2">Verbal</p>
+                </div>
+
+                <div>
+                    <p class="text-lavender fs-500 ff-hanken bold-2"><span class="text-dark">80</span> /100</p>
+                </div>
+            </div>
+
+            <div class="visual flex">
+                <div class="flex" style="--gap: 0.5em;">
+                    <img src="./assets/img/icon-visual.svg" alt="reaction">
+                    <p class="fs-500 ff-hanken bold-2">Visual</p>
+                </div>
+
+                <div>
+                    <p class="text-lavender fs-500 ff-hanken bold-2"><span class="text-dark">72</span> /100</p>
+                </div>
+            </div>
+         </div>
+        <!-- end right side  -->
+    </div>
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
