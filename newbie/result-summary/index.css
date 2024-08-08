@@ -172,9 +172,9 @@ body{
 .text-primary-green{color: hsl(var(--clr-p-green));}
 
 /* gradient colors */
-.gradient-1{background-image: linear-gradient(hsl(var(--clr-g-violet-blue)) hsl(hsl(var(--clr-g-royal-blue))));}
+.gradient-1{background-image: linear-gradient(180deg, hsl(var(--clr-g-violet-blue)), hsl(var(--clr-g-royal-blue)));}
 
-.gradient-2{background-image: linear-gradient(hsl(var(--clr-g-slate-blue)) hsl(var(--clr-g-persian-blue)));}
+.gradient-2{background-image: linear-gradient(180deg, hsl(var(--clr-g-slate-blue)),hsl(var(--clr-g-persian-blue)));}
 
 /* typography */
 .ff-hanken{font-family: var(--ff-sans-serif-hanken);}
@@ -183,6 +183,8 @@ body{
 .uppercase{text-transform: uppercase;}
 
 .capitalize{text-transform: capitalize;}
+
+.text-center{text-align: center;}
 
 .letter-spacing-1{letter-spacing: 4.75px;}
 .letter-spacing-2{letter-spacing: 3.75px;}
@@ -214,4 +216,50 @@ section > h2{margin-block: 1em;}
     margin-right: 1em;
     color: hsl(var(--clr-dark) / .5);
     font-weight: 700;
+}
+
+.radial-container{
+    width: 10em;
+    aspect-ratio: 1;
+    background-image: linear-gradient(180deg, hsl(var(--clr-g-royal-blue)), hsl(var(--clr-g-violet-blue)));
+    border-radius: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.score-container{
+    width: 500px;
+    aspect-ratio: 1;
+    background-image: linear-gradient(180deg, hsl(var(--clr-g-slate-blue)),hsl(var(--clr-g-persian-blue)));
+    border-radius: 3em;
+    grid-auto-rows: min-content;
+    place-items: center;
+    padding: 2em;
+}
+
+.reaction{
+    background-color: hsl(var(--clr-p-red) / 0.1);
+    color: hsl(var(--clr-p-red));
+    padding: 1.5em 0.5em;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.btn{
+    background-color: hsl(var(--clr-dark));
+    color: hsl(var(--clr-white));
+    border: none;
+    padding-block: 2em;
+    font-weight: 600;
+    border-radius: 40px;
+    width: 100%;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus{
+    background-color: hsl(var(--clr-p-blue));
 }
