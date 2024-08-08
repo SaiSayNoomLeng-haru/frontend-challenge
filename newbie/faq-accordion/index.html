@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FAQ Accordion</title>
+        <link rel="stylesheet" href="index.css">
+        <!-- google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/icon/">
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/icon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/icon/favicon-16x16.png">
+        <link rel="manifest" href="./assets/icon/site.webmanifest">
+    </head>
+<body class="body">
+    
+    <main class="container grid" id="content" style="--gap: 2em">
+        <div class="header flex flow" style="--gap: 2em">
+            <img src="./assets/img/icon-star.svg" alt="icon">
+            <p class="ff-sans-normal bold-1 fs-900 text-dark">FAQs</p>
+        </div>
+
+        <div class="accordion-container">
+            <div class="accordion flex">
+                <div>
+                    <p class="ff-sans-normal bold-2 fs-500">What is Frontend Mentor, and how will it help me?</p>
+                </div>
+                <div>
+                    <button class="toggle-btn" aria-expanded="false"></button>
+                </div>
+               
+                
+            </div>
+            
+            <div class="dropdown-container" visible="false">
+                <p class="text-light-purple ff-sans-normal">Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects in HTML, CSS and JavaScript. It's suitable for all levels and ideal for portfolio builing.</p>
+            </div>
+         </div>
+
+         <div class="accordion-container">
+            <div class="accordion flex">
+                <div>
+                    <p class="ff-sans-normal bold-2 fs-500">Is Frontend Mentor free?</p>
+                </div>
+               <div>
+                    <button class="toggle-btn" aria-expanded="false"></button>
+               </div>
+               
+            </div>
+            
+            <div class="dropdown-container" visible="false">
+                <p class="text-light-purple ff-sans-normal">Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects in HTML, CSS and JavaScript. It's suitable for all levels and ideal for portfolio builing.</p>
+            </div>
+         </div>
+
+         <div class="accordion-container">
+            <div class="accordion flex">
+                <div>  <p class="ff-sans-normal bold-2 fs-500">Can I use Frontend Mentor projects in my portfolio?</p></div>
+                <div>
+                    <button class="toggle-btn" aria-expanded="false"></button>
+                </div>
+              
+                
+            </div>
+            
+            <div class="dropdown-container" visible="false">
+                <p class="text-light-purple ff-sans-normal">Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects in HTML, CSS and JavaScript. It's suitable for all levels and ideal for portfolio builing.</p>
+            </div>
+         </div>
+
+         <div class="accordion-container">
+            <div class="accordion flex">
+                <div>
+                    <p class="ff-sans-normal bold-2 fs-500">How can i get help if i'm stuck on a challenge?</p>
+                </div>
+                <div>
+                    <button class="toggle-btn" aria-expanded="false"></button>
+                </div>
+                
+            </div>
+            
+            <div class="dropdown-container" visible="false">
+                <p class="text-light-purple ff-sans-normal">The best(and quickest) way to get help on a challenge is in our Discord server. There are thousands of other developers in there, so it's a great palce to ask questions. We even have a dedicated 'help' channel! If you haven't joined yet, you can get an invite to our Discord server here.</p>
+            </div>
+         </div>
+    </main>
+   
+
+
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>

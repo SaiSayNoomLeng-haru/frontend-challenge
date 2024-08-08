@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Design System</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/icon/">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/icon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/icon/site.webmanifest">
+</head>
+<body>
+    <div class="container">
+        <h2 class="bold-1">Design System</h2>
+
+        <section id="colors">
+            <h3 class="number-title">01 <span>Colors</span></h3>
+
+            <div class="flex">
+                <div style="flex-grow: 1;">
+                    <div class="bg-white" style="padding: 1em; border: 1px solid black;">
+                        #FFFFFF
+                    </div>
+                    <p class="bold-2">RGB <span class="text-dark"></span></p>
+                    <p class="bold-2">HSL <span class="text-dark">0° 0 100</span></p>
+                </div>
+
+                <div style="flex-grow: 1;">
+                    <div class="bg-dark text-white" style="padding: 1em; border: 1px solid black;">
+                        #221524
+                    </div>
+                    <p class="bold-2">RGB <span class="text-dark"></span></p>
+                    <p class="bold-2">HSL <span class="text-dark">292° 42 14</span></p>
+                </div>
+
+                <div style="flex-grow: 1;">
+                    <div class="bg-purple" style="padding: 1em; border: 1px solid black;">
+                        #7A697D
+                    </div>
+                    <p class="bold-2">RGB <span class="text-dark"></span></p>
+                    <p class="bold-2">HSL <span class="text-dark">292° 16 49</span></p>
+                </div>
+
+                <div style="flex-grow: 1;">
+                    <div class="bg-light-purple" style="padding: 1em; border: 1px solid black;">
+                       #9000F7
+                    </div>
+                    <p class="bold-2">RGB <span class="text-dark"></span></p>
+                    <p class="bold-2">HSL <span class="text-dark">292° 100 97</span></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="typography">
+            <h2 class="number-title">02 <span>Typography</span></h2>
+
+            <div class="flex">
+                <div style="flex-basis: 100%;">
+                    <div>
+                    <p class="text-dark">Heading 1 - Work Sans - 48px </p>
+                    <p class="ff-sans-normal bold-1 fs-900">FAQS</p>
+                    </div>
+
+                    <div>
+                    <p class="text-dark">Sub Heading 1 - Work Sans - 48px </p>
+                    <p class="ff-sans-normal bold-2 fs-500">Frontend Mentor</p>
+                    </div>
+            </div>
+
+            <div style="flex-basis: 100%;">
+                <p class="text-dark">Body</p>
+                <p class="ff-sans-normal fs-400 text-light-purple">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est accusantium vitae ad at esse fugiat eaque officia quisquam vel quas corporis nisi, laborum rerum. Error eaque enim distinctio unde itaque!</p>
+            </div>
+
+            </div>
+        </section>
+
+        <section id="elements">
+            <h2 class="number-title">03 <span>Elements</span></h2>
+
+            <!-- accordion -->
+             <div class="accordion-container">
+                <div class="accordion flex">
+                    <p class="ff-sans-normal bold-2 fs-500">What is Frontend Mentor, and how will it help me?</p>
+                    <button class="toggle-btn" aria-expanded="false"></button>
+                </div>
+                
+                <div class="dropdown-container" visible="false">
+                    <p class="text-light-purple ff-sans-normal">Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects in HTML, CSS and JavaScript. It's suitable for all levels and ideal for portfolio builing.</p>
+                </div>
+             </div>
+
+             <div class="accordion-container">
+                <div class="accordion flex">
+                    <p class="ff-sans-normal bold-2 fs-500">What is Frontend Mentor, and how will it help me?</p>
+                    <button class="toggle-btn" aria-expanded="false"></button>
+                </div>
+                
+                <div class="dropdown-container" visible="false">
+                    <p class="text-light-purple ff-sans-normal">Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects in HTML, CSS and JavaScript. It's suitable for all levels and ideal for portfolio builing.</p>
+                </div>
+             </div>
+
+             <div class="accordion-container">
+                <div class="accordion flex">
+                    <p class="ff-sans-normal bold-2 fs-500">What is Frontend Mentor, and how will it help me?</p>
+                    <button class="toggle-btn" aria-expanded="false"></button>
+                </div>
+                
+                <div class="dropdown-container" visible="false">
+                    <p class="text-light-purple ff-sans-normal">Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects in HTML, CSS and JavaScript. It's suitable for all levels and ideal for portfolio builing.</p>
+                </div>
+             </div>
+        </section>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
