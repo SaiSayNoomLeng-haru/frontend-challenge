@@ -10,6 +10,14 @@
 
 ### Screenshots
 
+![design system](./assets/screenshots/design%20system.png)
+![mobile](./assets/screenshots/mobile.png)
+![desktop](./assets/screenshots/desktop.png)
+
 ### Built With
+- HTML
+- CSS custom properties
+- JS
 
 # Notes
+- img change on window width
