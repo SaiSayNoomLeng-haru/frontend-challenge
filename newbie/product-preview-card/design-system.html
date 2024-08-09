@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Design System</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">
+    <link rel="manifest" href="./assets/icons/site.webmanifest">
+</head>
+<body>
+    <div class="container">
+        <h1># Design System</h1>
+        <!-- colors -->
+        <section id="colors">
+            <h2 class="number-title">01 <span>colors</span></h2>
+
+            <div class="flex flow" style="--margin: 30px">
+                <div style="flex-grow: 1;">
+                    <div class="bg-white" style="padding: 1em; border: 1px solid black;">
+                        #FFFFFF
+                    </div>
+                    <p>RGB <span class="text-cyan"></span></p>
+                    <p>HSL <span class="text-cyan">0° 0 100</span></p>
+                </div>
+
+                <div style="flex-grow: 1;">
+                    <div class="bg-dark text-white uppercase" style="padding: 1em; border: 1px solid black;">
+                        #1c2024
+                    </div>
+                    <p>RGB <span class="text-cyan"></span></p>
+                    <p>HSL <span class="text-cyan">212° 21 14</span></p>
+                </div>
+
+                <div style="flex-grow: 1;">
+                    <div class="bg-cyan text-white uppercase" style="padding: 1em; border: 1px solid black;">
+                        #3c5e52
+                    </div>
+                    <p>RGB <span class="text-cyan"></span></p>
+                    <p>HSL <span class="text-cyan">158° 36 37</span></p>
+                </div>
+
+                <div style="flex-grow: 1;">
+                    <div class="bg-light text-white uppercase" style="padding: 1em; border: 1px solid black;">
+                        #6c6f7a
+                    </div>
+                    <p>RGB <span class="text-cyan"></span></p>
+                    <p>HSL <span class="text-cyan">228° 12 48</span></p>
+                </div>
+
+                <div style="flex-grow: 1;">
+                    <div class="bg-cream text-dark uppercase" style="padding: 1em; border: 1px solid black;">
+                        #6c6f7a
+                    </div>
+                    <p>RGB <span class="text-cyan"></span></p>
+                    <p>HSL <span class="text-cyan">30° 21 14</span></p>
+                </div>
+            </div>
+        </section>
+        <!-- end colors -->
+
+        <div class="divider"></div>
+
+        <!-- typography -->
+         <section id="typography">
+            <h2 class="number-title">02 <span>Typography</span></h2>
+
+            <div class="flex flow" style="--margin: 30px">
+                <div style="flex-basis: 100%;">
+
+                    <div>
+                        <p>Heading 1 - Franunces - 40px</p>
+                        <p class="text-cyan ff-serif fs-900 bold-1  capitalize">price</p>
+                    </div>
+
+                    <div>
+                        <p>Heading 2 - Franunces - 32px</p>
+                        <p class="text-dark ff-serif fs-700 bold-1  capitalize">parfum</p>
+                    </div>
+
+                    <div>
+                        <p>Sub Heading 1 - Montserrat - 22px</p>
+                        <p class="text-dark ff-sans fs-600 uppercase letter-spacing-1">perfume</p>
+                    </div>
+
+                </div>
+
+                <div style="flex-basis: 100%;">
+                    <div>
+                        <p>Body - Montserrat - 14px</p>
+                        <p class="fs-400 text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt fugiat dignissimos ratione quam doloribus accusantium non ex adipisci beatae numquam et veritatis eveniet odit omnis, architecto, ea nemo placeat. Excepturi molestias repellat ullam adipisci corrupti, facilis blanditiis! Dicta magnam dolorem libero, eveniet minus esse reprehenderit obcaecati aspernatur, architecto harum neque. Aliquam alias odit quis. Provident ratione atque perspiciatis, ipsam sunt repudiandae qui expedita, eligendi numquam incidunt autem obcaecati quis temporibus ea? Commodi cumque dolor a laudantium qui ullam eos quia quas praesentium illum officia, quae quis voluptate odio et! Qui aliquid eius voluptatibus voluptates, autem animi reiciendis magni eveniet cumque?</p>
+                    </div>
+                </div>
+            </div>
+         </section>
+        <!-- end typography -->
+
+        <div class="divider"></div>
+
+        <!-- elements -->
+         <section id="elements">
+            <h2 class="number-title">03 <span>elements</span></h2>
+
+            <div class="flex flow" style="--margin: 30px">
+                <button class="btn flex" style="--gap: 0.2em">
+                    <img src="./assets/img/icon-cart.svg" alt="cart">
+                    Add to Cart
+                </button>
+            </div>
+         </section>
+        <!-- end elements -->
+    </div>
+    
+
+    <script src="index.js"></script>
+</body>
+</html>

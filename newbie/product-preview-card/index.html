@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Product Preview Card</title>
+        <link rel="stylesheet" href="index.css">
+        <!-- google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/">
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">
+        <link rel="manifest" href="./assets/icons/site.webmanifest">
+    </head>
+<body>
+    <main class="container">
+        <div class="card flex">
+            <div class="card-img">
+                <img src="/assets/img/image-product-mobile.jpg" alt="product img" id="product-img">
+            </div>
+            <div class="card-desc flex">
+                <div>
+                    <p class="text-light ff-sans fs-600 uppercase letter-spacing-1">perfume</p>
+                </div>
+
+                <div>
+                    <h1 class="text-dark ff-serif fs-700 bold-1  capitalize">Gabrielle Essence Eau De Parfum</h1>
+                </div>
+
+                <div class="flow">
+                    <p class="fs-400 text-light">A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of <span class="uppercase">chanel.</span></p>
+                </div>
+
+                <div>
+                    <p class="text-cyan ff-serif fs-900 bold-1  capitalize">$149.99 <span class="fs-300 text-light line-through">169.99</span></p>
+                </div>
+
+                <button class="btn flex flow" style="--gap: 0.2em">
+                    <img src="./assets/img/icon-cart.svg" alt="cart">
+                    Add to Cart
+                </button>   
+            </div>
+        </div>
+    </main>
+    
+    <script src="index.js"></script>
+</body>
+</html>
