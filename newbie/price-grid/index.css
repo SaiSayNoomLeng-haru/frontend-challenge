@@ -92,8 +92,12 @@ body{
     line-height: 1.5;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    background-color: hsl(var(--clr-white));
+    background-color: hsl(var(--clr-light));
     color: hsl(var(--clr-black));
+    font-family: var(--ff-normal);
+
+    display: grid;
+    place-items: center;
 }
 
 
@@ -119,6 +123,10 @@ body{
     max-width: 90vw;
     margin-inline: auto;
     padding-inline: 2em;
+}
+
+.container--content{
+    max-width: 90vw;
 }
 
 .flow{
@@ -169,6 +177,12 @@ body{
 
 .link-style{
     text-decoration: none;
+    display: block;
+    color: hsl(var(--clr-white));
+}
+.link-style:hover,
+.link-style:focus{
+    color: hsl(var(--clr-black) / .5);
 }
 
 /* colors */
@@ -176,7 +190,7 @@ body{
 .bg-yellow{background-color: hsl(var(--clr-yellow));}
 .bg-light{background-color: hsl(var(--clr-light));}
 .bg-white{background-color: hsl(var(--clr-white));}
-.bg-black{background-color: hsl(var(--clr-black));}
+.bg-dark{background-color: hsl(var(--clr-black));}
 .bg-blue{background-color: hsl(var(--clr-blue));}
 
 .text-cyan{color: hsl(var(--clr-cyan));}
@@ -234,3 +248,46 @@ section > h2{margin: 1em;}
     color: hsl(var(--clr-black) / .5);
     font-weight: 700;
 }
+
+.btn{
+    border: none;
+    background-color: hsl(var(--clr-yellow));
+    color: hsl(var(--clr-white));
+    border-radius: 5px;
+    font-weight: 500;
+    grid-column: 1 / -1;
+    padding-block: 1em;
+    cursor: pointer;
+}
+
+/* content */
+.content{
+    background-color: hsl(var(--clr-white));
+    border-radius: 5px;
+    max-height: 90vh;
+    grid-template-rows: repeat(auto-fit, minmax(max-content, 1fr));
+    gap: 0;
+}
+.content > div{
+    padding: 1em;
+}
+
+.why{
+    background-color: hsl(var(--clr-cyan) / .7);
+}
+
+@media(min-width: 30em){
+    .content{
+        width: clamp(80vw, 75vw, 70vw);
+        padding: 0;
+        grid-template: repeat(2, minmax(min-content, 1fr)) / repeat(2, minmax(min-content, 1fr));;
+    }
+    .community{
+        grid-column: 1 / -1;
+    }
+
+    .content > div{
+        padding: 3em;
+    }
+}
+
