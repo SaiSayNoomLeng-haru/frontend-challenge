@@ -1,0 +1,236 @@
+/* ----------------- */
+/* Custom Porperties */
+/* ----------------- */
+
+:root{
+    /* colors */
+    --clr-cyan: 179 62 43;
+    --clr-yellow: 71 73 54;
+    --clr-light: 204 43 93;
+    --clr-blue: 218 22 67;
+    --clr-white: 0 0 100;
+    --clr-black: 0 0 0;
+
+    /* font size */
+    --fs-900: 3rem;
+    --fs-800: 2.5rem;
+    --fs-700: 2rem;
+    --fs-600: 1.75rem;
+    --fs-500: 1.5rem;
+    --fs-400: 1rem;
+    --fs-300: 0.875rem;
+    --fs-200: 0.5rem;
+
+    /* font-family */
+    --ff-normal: "Karla", sans-serif;
+}
+
+/* ----------------- */
+/* Reset-------------*/
+/* ----------------- */
+
+/* box-sizing */
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+/* margins */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+picture{
+    margin: 0;
+}
+
+/* font-weight */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+    font-weight: 400;
+}
+
+/* make img easier to work with */
+img{
+    display: block;
+    max-width: 100%;
+}
+
+/* make form elements easier to work with */
+input,
+select,
+textarea,
+button{
+    font: inherit;
+}
+
+/* reduce animations for people who've turned them off */
+@media(prefers-reduced-motion: reduce){
+    *,
+    *::before,
+    *::after{
+        animation-duration: 0.01ms!important;
+        animation-iteration-count: 1!important;
+        transition-duration: 0.01ms!important;
+        scroll-behavior: auto;
+    }
+}
+
+/* set up body */
+body{
+    min-height: 100vh;
+    line-height: 1.5;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: hsl(var(--clr-white));
+    color: hsl(var(--clr-black));
+}
+
+
+/* ----------------- */
+/* Utility Classes---*/
+/* ----------------- */
+
+.flex{
+    display: flex;
+    gap: var(--gap, 1em);
+}
+
+.grid{
+    display: grid;
+    gap: var(--gap, 1em);
+}
+
+.block{
+    display: block;
+}
+
+.container{
+    max-width: 90vw;
+    margin-inline: auto;
+    padding-inline: 2em;
+}
+
+.flow{
+    margin-block: var(--margin, 2em);
+}
+
+.divider{
+    display: block;
+    margin-inline: auto;
+    background-color: hsl(var(--clr-black));
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.divider::before,
+.divider::after{
+    content: '';
+    position: absolute;
+    width: 30vw;
+    height: 2px;
+    background-color: hsl(var(--clr-black));
+    top: 50%;
+}
+
+.divider::after{
+    right: -10px;
+    transform: translate(100%, -50%);
+}
+
+.divider::before{
+    left: -10px;
+    transform: translate(-100%, -50%);
+}
+
+.sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+.link-style{
+    text-decoration: none;
+}
+
+/* colors */
+.bg-cyan{background-color: hsl(var(--clr-cyan));}
+.bg-yellow{background-color: hsl(var(--clr-yellow));}
+.bg-light{background-color: hsl(var(--clr-light));}
+.bg-white{background-color: hsl(var(--clr-white));}
+.bg-black{background-color: hsl(var(--clr-black));}
+.bg-blue{background-color: hsl(var(--clr-blue));}
+
+.text-cyan{color: hsl(var(--clr-cyan));}
+.text-yellow{color: hsl(var(--clr-yellow));}
+.text-light{color: hsl(var(--clr-light));}
+.text-white{color: hsl(var(--clr-white));}
+.text-black{color: hsl(var(--clr-black));}
+.text-blue{color: hsl(var(--clr-blue));}
+
+/* typography */
+.ff-normal{font-family: var(--ff-normal);}
+
+.fs-900{font-size: var(--fs-900);}
+.fs-800{font-size: var(--fs-800);}
+.fs-700{font-size: var(--fs-700);}
+.fs-600{font-size: var(--fs-600);}
+.fs-500{font-size: var(--fs-500);}
+.fs-400{font-size: var(--fs-400);}
+.fs-300{font-size: var(--fs-300);}
+.fs-200{font-size: var(--fs-200);}
+
+.bold-1{font-weight: 700;}
+
+.letter-spacing-1{letter-spacing: 4.75px;}
+.letter-spacing-2{letter-spacing: 3.75px;}
+.letter-spacing-3{letter-spacing: 2.75px;}
+
+.fs-900,
+.fs-800,
+.fs-700,
+.fs-600{
+    line-height: 1.1;
+}
+
+.uppercase{text-transform: uppercase;}
+
+.capitalize{text-transform: capitalize;}
+
+.text-center{text-align: center;}
+
+/* design system */
+
+section{margin: 2em;}
+
+section > h2{margin: 1em;}
+
+.number-title{
+    text-transform: uppercase;
+    letter-spacing: 4.75px;
+    font-size: var(--fs-500);
+}
+
+.number-title span{
+    margin-right: 1em;
+    color: hsl(var(--clr-black) / .5);
+    font-weight: 700;
+}
