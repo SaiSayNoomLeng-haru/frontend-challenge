@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Review</title>
+        <title>Feedback</title>
         <link rel="stylesheet" href="index.css">
         <!-- google font -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,35 +17,28 @@
     </head>
 <body>
     <main id="main-review">
-        <div class="container grid review-card">
+        <div class="container grid feedback-card">
             <div class="star">
-                <img src="./assets/img/icon-star.svg" alt="">
+                <img src="./assets/img/illustration-thank-you.svg" alt="">
             </div>
 
             <div class="header">
-                <p class="fs-500 text-white bold-1">How did we do?</p>
+                <p class="fs-500 text-white bold-1">Thank You!</p>
+            </div>
+
+            <div class="selected-feedback">
+                <p>You selected <span id="result-star"></span> out of 5</p>
             </div>
 
             <div class="desc">
-                <p class="text-light text-center">
-                    Please let us know how we did with your support request. All feedback is appreciated to help us improve out offering!
-                </p>
+               <p class="text-light text-center">We appreciate youtaking the time to give a rating. If you ever need more supoprt, dont' hesitate to get in touch!</p>
+
+               <p class="text-light text-center">
+                Made a mistake? go back to review!
+               </p>
             </div>
 
-            <div class="btn-group flex">
-                <button class="btn" star="1">1</button>
-                <button class="btn" star="2">2</button>
-                <button class="btn" star="3">3</button>
-                <button class="btn" star="4">4</button>
-                <button class="btn" star="5">5</button>
-            </div>
-
-
-            <button class="submit-btn">Submit</button>
-
-            <div style="place-self: center">
-                <p id="error-message"></p>
-            </div>
+            <button class="back-btn">Back</button>
         </div>
     </main>
 

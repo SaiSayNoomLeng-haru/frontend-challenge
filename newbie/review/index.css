@@ -1,0 +1,330 @@
+/* ----------------- */
+/* Custom Properties */
+/* ----------------- */
+:root{
+    /* colors */
+    --clr-orange: 25 97 53;
+    --clr-white: 0 0 100;
+    --clr-gray: 217 12 63;
+    --clr-blue: 213 19 18;
+    --clr-dark: 216 12 8;
+
+    /* font size */
+    --fs-900: 3rem;
+    --fs-800: 2.5rem;
+    --fs-700: 2rem;
+    --fs-600: 1.75rem;
+    --fs-500: 1.5rem;
+    --fs-400: 1rem;
+    --fs-300: 0.875rem;
+    --fs-200: 0.5rem;
+
+    /* font family */
+    --ff-normal: "Overpass", sans-serif;
+    --ff-mono: "Overpass Mono", monospace;
+}
+
+/* ----------------- */
+/* Reset------------ */
+/* ----------------- */
+
+/* box sizing */
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+/* margin */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+picture{
+    margin: 0;
+}
+
+/* font weight */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+    font-weight: 400;
+}
+
+/* make img easier to work with */
+img{
+    max-width: 100%;
+    display: block;
+}
+
+/* make form elements easier to work with */
+input,
+button,
+select,
+textarea{
+    font: inherit;
+}
+
+/* reduce animation for people who've turned them off */
+@media(prefers-reduced-motion: reduce){
+    *,
+    *::before,
+    *::after{
+        animation-duration: 0.01ms!important;
+        animation-iteration-count: 1!important;
+        transition-duration: 0.01ms!important;
+        scroll-behavior: auto;
+    }
+}
+
+/* set up body */
+body{
+    min-height: 100vh;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background-color: hsl(var(--clr-dark));
+    color: hsl(var(--clr-white));
+    font-family: var(--ff-normal);
+    user-select: none;
+    display: grid;
+    place-items: center;
+}
+
+
+/* ----------------- */
+/* Utility Classes-- */
+/* ----------------- */
+
+.flex{
+    display: flex;
+    gap: var(--gap, 1em);
+}
+
+.grid{
+    display: grid;
+    gap: var(--gap, 1em);
+}
+
+.block{
+    display: block;
+}
+
+.container{
+    max-width: 90vw;
+    margin-inline: auto;
+    padding-inline: 2em;
+}
+
+.flow{
+    margin-block: 2em;
+}
+
+.divider{
+    display: block;
+    width: 5px;
+    height: 5px;
+    margin-inline: auto;
+    background-color: hsl(var(--clr-white));
+    border-radius: 50%;
+    position: relative;
+}
+
+.divider::before,
+.divider::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 30vw;
+    height: 2px;
+    background-color: hsl(var(--clr-white));
+}
+
+.divider::before{
+    left: -10px;
+    transform: translate(-100%, -50%);
+}
+
+.divider::after{
+    right: -10px;
+    transform: translate(100%, -50%);
+}
+
+.sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+/* colors */
+.bg-dark{background-color: hsl(var(--clr-dark));}
+.bg-white{background-color: hsl(var(--clr-white));}
+.bg-orange{background-color: hsl(var(--clr-orange));}
+.bg-light{background-color: hsl(var(--clr-gray));}
+.bg-blue{background-color: hsl(var(--clr-blue));}
+
+.text-dark{color: hsl(var(--clr-dark));}
+.text-white{color: hsl(var(--clr-white));}
+.text-orange{color: hsl(var(--clr-orange));}
+.text-light{color: hsl(var(--clr-gray));}
+.text-blue{color: hsl(var(--clr-blue));}
+
+/* typography */
+.ff-normal{font-family: var(--ff-normal);}
+.ff-mono{font-family: var(--ff-mono);}
+
+.fs-900{font-size: var(--fs-900);}
+.fs-800{font-size: var(--fs-800);}
+.fs-700{font-size: var(--fs-700);}
+.fs-600{font-size: var(--fs-600);}
+.fs-500{font-size: var(--fs-500);}
+.fs-400{font-size: var(--fs-400);}
+.fs-300{font-size: var(--fs-300);}
+.fs-200{font-size: var(--fs-200);}
+
+.letter-spacing-1{letter-spacing: 4.75px;}
+.letter-spacing-2{letter-spacing: 3.75px;}
+.letter-spacing-3{letter-spacing: 2.75px;}
+
+.bold-1{font-weight: 700;}
+
+.uppercase{text-transform: uppercase;}
+
+.capitalize{text-transform: capitalize;}
+
+.text-center{text-align: center;}
+
+.fs-900,
+.fs-800,
+.fs-700,
+.fs-600{
+    line-height: 1.1;
+}
+
+/* design system */
+
+section{margin: 2em;}
+
+section > h2{margin: 1em;}
+
+.number-title{
+    text-transform: uppercase;
+    letter-spacing: 4.75px;
+    font-size: var(--fs-400);
+}
+
+.number-title span{
+    margin-right: 1em;
+    color: hsl(var(--clr-white) / .5);
+    font-weight: 700;
+}
+
+.btn{
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: hsl(var(--clr-gray) / .5);
+    color: hsl(var(--clr-white));
+    cursor: pointer;
+    font-family: var(--ff-mono);
+}
+
+.btn:hover{
+    background-color: hsl(var(--clr-white));
+    color: hsl(var(--clr-dark));
+    font-weight: 500;
+}
+
+.btn:focus{
+    background-color: hsl(var(--clr-orange));
+    color: hsl(var(--clr-dark));
+    font-weight: 500;
+}
+
+.submit-btn, .back-btn{
+        border: none;
+        background-color: hsl(var(--clr-orange));
+        color: hsl(var(--clr-dark));
+        cursor: pointer;
+        font-family: var(--ff-mono);
+        font-weight: 800;
+        border-radius: 20px;
+        padding-block: .5em;
+        width: 80vw;
+}
+
+.submit-btn:hover,
+.submit-btn:focus,
+.back-btn:hover,
+.back-btn:focus{
+    background-color: hsl(var(--clr-white));
+}
+
+/* star */
+.review-card{
+    background-color: hsl(var(--clr-blue));
+    height: 55vh;
+    border-radius: 20px;
+    padding: 2em;
+    grid-auto-rows: max-content;
+    place-items: center;
+    max-width: fit-content;
+}
+
+.star > img{
+    background-color: hsl(var(--clr-gray) / .2);
+    padding: 1em;
+    border-radius: 50%;
+}
+
+#error-message{
+    background-color: hsl(var(--clr-gray) / .2);
+    padding: .5em;
+    border-radius: 20px;
+    color: hsl(var(--clr-orange));
+    display: none;
+}
+
+@media (min-width: 35em){
+    .review-card{
+        width: clamp(50vw, 55vw, 60vw);
+    
+    }
+    .submit-btn{
+        width: clamp(10vw, 15vw, 20vw);
+    }
+}
+
+/* feedback */
+.feedback-card{
+    place-items: center;
+}
+
+.selected-feedback{
+    color: hsl(var(--clr-orange));
+    background-color: hsl(var(--clr-blue));
+    padding: 0.5em 1em;
+    border-radius: 20px;
+    font-size: var(--fs-300);
+}
+
+@media(min-width: 35em){
+    .back-btn{
+        max-width: 20vw;
+    }
+}
