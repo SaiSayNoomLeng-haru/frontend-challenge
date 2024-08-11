@@ -12,7 +12,9 @@
 
 - Design System
 ![design-system](./assets/scereenshots/design-system.png)
+- Mobile
 ![mobile](./assets/scereenshots/mobile.png)
+- Desktop
 ![desktop](./assets/scereenshots/desktop.png)
 
 
