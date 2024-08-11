@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>News homepage</title>
+        <link rel="stylesheet" href="index.css">
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/">
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">
+        <link rel="manifest" href="./assets/icons/site.webmanifest">
+        <!-- google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    </head>
+<body>
+  
+    <!-- nav -->
+        <div class="container">
+            <nav class="navbar flex" id="navbar">
+                <div class="nav-img">
+                    <img src="./assets/img/logo.svg" alt="logo">
+                </div>
+
+                <button class="mobile-nav-toggle" aria-expanded="false" aria-controls="nav-menu"></button>
+
+                <div>
+                    
+                    <ul class="nav-menu flex" id="nav-menu" visible="false">
+                        <li class="nav-items"><a href="#" class="nav-links hover-red">Home</a></li>
+                        <li class="nav-items"><a href="#" class="nav-links hover-red">New</a></li>
+                        <li class="nav-items"><a href="#" class="nav-links hover-red">Popular</a></li>
+                        <li class="nav-items"><a href="#" class="nav-links hover-red">Popular</a></li>
+                        <li class="nav-items"><a href="#" class="nav-links hover-red">Trending</a></li>
+                        <li class="nav-items"><a href="#" class="nav-links hover-red">Categories</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    <!-- end nav -->
+
+    <!-- main -->
+     <div class="flex flow container" id="main">
+        <div class="main--img">
+            <img id="cover-img" src="./assets/img/image-web-3-mobile.jpg" alt="">
+        </div>
+
+        <div class="flex main--content">
+            <div>
+                <h1 class="header-1 capitalize">the bright future of web 3.0?</h1>
+            </div>
+            <div>
+                <p class="text-dark">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+                <button class="btn flow">read more</button>
+            </div>
+        </div>
+     </div>
+    <!-- end main -->
+    
+    <!-- new -->
+     <div class="container bg-dark flex" id="new">
+        <h1 class="sub-header-1 text-light-orange">New</h1>
+
+        <div>
+            <h3 class="sub-header-2 text-white hover-yellow">Hydrogen VS Electric Cars</h3>
+            <p class="text-light">Will Hydrogen-fueled cars ever catch up to EVs?</p>
+        </div>
+
+        <div class="divider"></div>
+
+        <div>
+            <h3 class="sub-header-2 text-white hover-yellow">The Downsides of AI Artistry</h3>
+            <p class="text-light">What are the possible adverse effects of on-demand AI iamge generation?</p>
+        </div>
+
+        <div class="divider"></div>
+
+        <div>
+            <h3 class="sub-header-2 text-white hover-yellow">The Downsides of AI Artistry</h3>
+            <p class="text-light">What are the possible adverse effects of on-demand AI iamge generation?</p>
+        </div>
+
+     </div>
+    <!-- end new -->
+
+    <!-- blog -->
+     <div class="flex flow container" id="blog">
+        <div class="blog-card flex">
+            <div class="blog-card-img">
+                <img src="./assets/img/image-retro-pcs.jpg" alt="">
+            </div>
+
+            <div class="blog-card-desc">
+                <h2 class="heading-2 text-red bold-1 fs-800">01</h2>
+                <h3 class="sub-heading-1 bold-1">Reviving Retro PCs</h3>
+                <p class="text-dark">What happens when old PCs are given modern upgrades?</p>
+            </div>
+        </div>
+        
+        <div class="blog-card flex">
+            <div class="blog-card-img">
+                <img src="./assets/img/image-top-laptops.jpg" alt="">
+            </div>
+
+            <div class="blog-card-desc">
+                <h2 class="heading-2 text-red bold-1 fs-800">02</h2>
+                <h3 class="sub-heading-1 bold-1">Top 10 Laptops of 2022</h3>
+                <p class="text-dark">Our best picks for various needs and budgets</p>
+            </div>
+        </div>
+
+        <div class="blog-card flex">
+            <div class="blog-card-img">
+                <img src="./assets/img/image-gaming-growth.jpg" alt="">
+            </div>
+
+            <div class="blog-card-desc">
+                <h2 class="heading-2 text-red bold-1 fs-800">03</h2>
+                <h3 class="sub-heading-1 bold-1">The Growth of Gaming</h3>
+                <p class="text-dark">How the pandemic has sparked fresh opportunities.</p>
+            </div>
+        </div>
+
+     </div>
+    <!-- end blog -->
+
+    <script src="index.js"></script>
+</body>
+</html>
