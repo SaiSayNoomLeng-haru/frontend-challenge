@@ -10,15 +10,24 @@
 
 # Screenshots
 
-- Design System
+##### Design System
 ![design-system](./assets/screenshots/design%20system.png)
 
-- Mobile Menu
+##### mobile menu
 ![mobile-menu](./assets/screenshots/mobile%20menu.png)
 
-- Mobile
-![mobile](./assets/screenshots/mbile.png)
+##### mobile
+![mobile-menu](./assets/screenshots/mobile.png)
+
+##### desktop
+![desktop](./assets/screenshots/desktop.png)
 
 # Built With
+- HTML
+- CSS custom properties
+- flex
+- grid
+- JavaScript
 
 # Notes
+- when using grid, beware of using max-width with vw in main container becuase it can impact the design.
