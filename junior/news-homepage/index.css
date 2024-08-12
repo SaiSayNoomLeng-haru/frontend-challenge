@@ -94,8 +94,9 @@ body{
     font-size: var(--fs-400);
     background-color: var(--clr-white);
     color: var(--clr-dark);
-    overflow-x: hidden;
+}
 
+.body{
     display: grid;
     grid-template: max-content / 1fr;
 }
@@ -351,7 +352,7 @@ body{
 }
 
 /* blog */
-#blog{
+.blog{
     flex-direction: column;
 }
 
@@ -362,3 +363,4 @@ body{
 .blog-card-desc{
     flex: 1 1 60%;
 }
+
