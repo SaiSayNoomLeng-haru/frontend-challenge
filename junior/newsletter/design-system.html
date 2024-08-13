@@ -10,8 +10,134 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">
     <link rel="manifest" href="./assets/icons/site.webmanifest">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="container">
+        <h1>## &nbsp;Design System</h1>
+    </div>
+
+    <!-- colors -->
+     <section id="colors" class="flex flow">
+        <div class="section-header" style="flex: 1 1 30%;">
+                <h2>01</h2>
+                <h1>Colors</h1>
+        </div>
+
+        <div class="section-desc flex" style="flex: 1 1 70%;">
+            <div style="flex: 1 1 100%;">
+                <div class="bg-tomato text-cetnter text-white uppercase" style="padding: 4em 1em; border-radius: 10px;">
+                   <p>#ab0b00</p>
+                   <p>RGB <span class="bold-1">171 11 0</span></p>
+                   <p>HSL <span class="bold-1">4 100 67</span></p>
+                </div>
+            </div>
+
+            <div style="flex: 1 1 100%;">
+                <div class="bg-dark text-cetnter text-white uppercase" style="padding: 4em 1em; border-radius: 10px;">
+                   <p>#242633</p>
+                   <p>RGB <span class="bold-1">36 38 5</span></p>
+                   <p>HSL <span class="bold-1">234 29 20</span></p>
+                </div>
+            </div>
+
+            <div style="flex: 1 1 100%;">
+                <div class="bg-light text-cetnter text-white uppercase" style="padding: 4em 1em; border-radius: 10px;">
+                   <p>#8e8f99</p>
+                   <p>RGB <span class="bold-1">142 143 153</span></p>
+                   <p>HSL <span class="bold-1">235 18 26</span></p>
+                </div>
+            </div>
+
+            <div style="flex: 1 1 100%;">
+                <div class="bg-gray text-cetnter text-dark uppercase" style="padding: 4em 1em; border-radius: 10px;">
+                   <p>#363742</p>
+                   <p>RGB <span class="bold-1">54 55 66</span></p>
+                   <p>HSL <span class="bold-1">231 7 60</span></p>
+                </div>
+            </div>
+
+            <div style="flex: 1 1 100%;">
+                <div class="bg-white text-cetnter text-dark uppercase" style="padding: 4em 1em; border-radius: 10px; border: 1px solid hsl(var(--clr-dark   ));">
+                   <p>#fffffff</p>
+                   <p>RGB <span class="bold-1">255 255 255</span></p>
+                   <p>HSL <span class="bold-1">0 0 100</span></p>
+                </div>
+            </div>
+        </div>
+     </section>
+     <!-- end color -->
+
+     <!-- typography -->
+     <section id="typography" class="flex flow">
+        <div class="section-header" style="flex: 1 1 30%;">
+                <h2>02</h2>
+                <h1>typography</h1>
+        </div>
+
+        <div class="section-desc flex" style="flex: 1 1 70%;">
+            <div style="flex: 1 1 100%;">
+                <h1 class="header-1">Header 1 - 32px - 700</h1>
+            </div>
+
+            <div style="flex: 1 1 100%;">
+               <p class="subheader-1">Sub-header 1 - 20px - 700</p>
+            </div>
+
+            <div style="flex: 1 1 100%;">
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, perspiciatis expedita ullam quasi laboriosam sed! Nostrum officia quos corrupti, beatae doloribus nisi placeat accusantium voluptatum inventore illo delectus, cumque velit?</p>
+            </div>
+        </div>
+     </section>
+     <!-- end typography -->
+
+    <!-- layout -->
+     <section id="layout" class="flex flow">
+        <div class="section-header" style="flex: 1 1 30%;">
+            <h2>03</h2>
+            <h1>Layout</h1>
+        </div>
+
+        <div class="flex layout">
+            <div class="mobile" style="flex: 1 1 100%;">
+                <h1>Mobile</h1>
+                <ul>
+                    <li>320px</li>
+                    <li>Grid Column : 1</li>
+                </ul>
+                <div class="mobile-display grid">
+                    <div class="cols"></div>
+                </div>
+            </div>
+        
+            <div class="desktop" style="flex: 1 1 100%;">
+                <h1>Desktop</h1>
+                <ul>
+                    <li>1440px</li>
+                    <li>Grid Column : 12</li>
+                </ul>
+                <div class="desktop-display grid">
+                    <div class="cols"></div>
+                    <div class="cols"></div>
+                    <div class="cols"></div>
+                    <div class="cols"></div>
+                    <div class="cols"></div>
+                    <div class="cols"></div>
+                    <div class="cols"></div>
+                    <div class="cols"></div>
+                    <div class="cols"></div>
+                    <div class="cols"></div>
+                    <div class="cols"></div>
+                    <div class="cols"></div>
+                </div>
+            </div>
+        </div>
+       
+     </section>
+    <!-- end layout -->
     
 </body>
 </html>
