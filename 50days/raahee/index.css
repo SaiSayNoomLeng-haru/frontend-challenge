@@ -408,8 +408,10 @@ section h2 > span::after{
     }
 
     .navbar-menu{
+        display: flex;
+        flex-direction: column;
         position: fixed;
-        inset: 10vw 0 0 50vw;
+        inset: 0 0 0 50vw;
         background-color: aliceblue;
         padding: min(5em, 10vw) 10vw min(5em, 10vw) 3em;
         transform: translateX(100%);
@@ -469,6 +471,24 @@ section h2 > span::after{
    
     .rotate .hamburger{
         transform: rotate(-90deg);
+    }
+
+    .sign-in-btn{
+        position: relative;
+        display: block;
+        width: 100%;
+        
+    }
+
+    .sign-in-btn::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: -10px;
+        width: 100%;
+        height: 1px;
+        transform: translateX(-50%, -50%);
+        background-color: hsl(var(--clr-dark));
     }
 }
 
