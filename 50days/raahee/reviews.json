@@ -1,0 +1,20 @@
+[
+    {
+        "title" : "Review 1", 
+        "img" : "./assets/img/people-1.jpg",
+        "desc" : "I really love this therapry session with Dr. Haru. She's really kind and pretty. And she has a supportive boyfriend who is so Ngan Chee but she really loves him and he also really loves her. I want to give Dr.Haru one billion dollars for her dental school. HeHe. Sai Sai Love Haru Forever...",
+        "name" : "babe yae baby lay"
+    },
+    {
+        "title" : "Review 2", 
+        "img" : "./assets/img/people-2.jpg",
+        "desc" : "Ka lay lay yay, sai sai toe d ko yout lr tr kyar b naw, kalay lay ko a yin ka htet a myr g po po chit tl, ka lay lay ko pyw ta lo pl sai sai a shay g so tr htet ta khu chin c ko tay chr arr yone site pee ya ag kyoe sar ml naw ",
+        "name" : "Ko gyi  Sai"
+    },
+    {
+        "title" : "Review 1", 
+        "img" : "./assets/img/people-3.jpg",
+        "desc" : "kalay lay is my life, a yan chit tl my babe a thae tone lay",
+        "name" : "Dal Dal Sai"
+    }
+]
