@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up Form</title>
+        <link rel="stylesheet" href="index.css">
+        <!-- icons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/">
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">
+        <link rel="manifest" href="./assets/icons/site.webmanifest">
+        <!-- google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <!-- description -->
+     <section id="desc" class="desc container flex text-center">
+        <div class="desc-header">
+            <p class="header">Learn to code by watching others</p>
+        </div>
+        <div class="desc-body">
+            <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great but understanding how developers think is invaluable.</p>
+        </div>
+     </section>
+    <!-- / description -->
+
+    <!-- info box -->
+    <section id="info-box" class="info-box container text-center">
+            <p><span class="bold-1">Try it free 7 days</span> then $20/mo. thereafter</p>
+    </section>
+    <!-- / info box -->
+
+    <!-- input form  -->
+    <section id="form" class="form container flow">
+        <form action="#index.html" method="POST" class="flex form-container">
+            <div class="input-boxes">
+                <input type="text" id="username" placeholder="Username">
+                <div class="error">
+                    <img src="./assets/img/icon-error.svg" alt="error icon">
+                    <p>Username cannot be empty</p>
+                </div>
+            </div>
+
+            <div class="username-desc">
+                <p>- Username cannot contain space</p>
+                <p>- Username cannot have special characters</p>
+            </div>
+
+            <div class="input-boxes">
+                <input type="text" id="first-name" placeholder="First Name">
+                <div class="error">
+                    <img src="./assets/img/icon-error.svg" alt="error icon">
+                    <p>First Name cannot be empty</p>
+                </div>
+            </div>
+
+            <div class="input-boxes">
+                <input type="text" id="last-name" placeholder="Last Name">
+                <div class="error">
+                    <img src="./assets/img/icon-error.svg" alt="error icon">
+                    <p>Last Name cannot be empty</p>
+                </div>
+            </div>
+
+            <div class="input-boxes">
+                <input type="email" id="email" placeholder="Email">
+                <div class="error">
+                    <img src="./assets/img/icon-error.svg" alt="error icon">
+                    <p>Must be valid email</p>
+                </div>
+            </div>
+
+            <div class="input-boxes">
+                <input type="password" id="password" placeholder="Password">
+                <div class="error">
+                    <img src="./assets/img/icon-error.svg" alt="error icon">
+                    <p>Password cannot be empty</p>
+                </div>
+            </div>
+
+            <div class="password-desc">
+                <p>- Password Must Contain at least one Uppercase</p>
+                <p>- Password Must Contain at least one number</p>
+                <p>- Password Must be at least 8 characters</p>
+            </div>
+
+            <div class="input-boxes">
+                <button class="btn-1 submit-btn">claim your free trail</button>
+            </div>
+
+            <div class="term">
+                <p class="text-muted">By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
+            </div>
+        </form>
+        
+    </section>
+    <!-- / input form -->
+
+
+    <script src="index.js"></script>
+</body>
+</html>

@@ -18,4 +18,5 @@
 - Grid
 - CSS Custom Properties
 
-# Notess
+# Notes
+- validate form with regEx
