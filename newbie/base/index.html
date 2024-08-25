@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Base Apparel</title>
+        <link rel="stylesheet" href="index.css">
+        <!-- google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+        <!-- font awesome -->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    </head>
+<body>
+    <section id="app" class="app container grid">
+        <div class="logo flow">
+            <img  src="./assets/img/logo.svg" alt="logo">
+        </div>
+        <div class="img">
+            <img src="./assets/img/hero-mobile.jpg" alt="hero" id="hero-img">
+        </div>
+        <div class="desc flex text-center">
+            <div class="desc-header">
+                <h1><span>We're</span> coming soon</h1>
+            </div>
+            <div class="desc-body">
+                <p>Hello fellow shppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
+            </div>
+        </div>
+        <form action="#index.html" id="form" class="grid form">
+            <div>
+                <input type="email" placeholder="Email Address" id="email">
+            </div>
+            <div>
+                <button class="submit-btn"><i class="fa-solid fa-arrow-right"></i></button>
+                <div id="error">
+                    <div id="error-msg">Please provide a valid email</div>
+                    <img src="./assets/img/icon-error.svg" alt="error svg" id="error-img">
+                </div>
+            </div>
+          
+        </form>
+    </section>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
